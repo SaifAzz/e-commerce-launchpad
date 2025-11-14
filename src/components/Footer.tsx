@@ -9,7 +9,7 @@ const Footer = () => {
           </div>
           
           <p className="text-muted-foreground text-sm text-center">
-            © {new Date().getFullYear()} Saif & Mouazz. Building the future of e-commerce.
+            © {new Date().getFullYear()} Saif & Mouazz. Building the future of software.
           </p>
           
           <div className="flex gap-6">

@@ -9,7 +9,7 @@ const About = () => {
             Meet the <span className="bg-gradient-primary bg-clip-text text-transparent">Founders</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Two passionate entrepreneurs on a mission to transform the e-commerce landscape
+            Two passionate entrepreneurs building innovative software solutions for e-commerce and web development
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const About = () => {
             </div>
             <h3 className="text-xl font-semibold">Mission</h3>
             <p className="text-muted-foreground">
-              Empowering merchants with tools to succeed in the digital marketplace
+              Empowering businesses with innovative software solutions and web development expertise
             </p>
           </div>
         </div>

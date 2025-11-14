@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary" />
-            <span className="text-lg font-bold">MindSync</span>
-          </div>
+          <Link to="/">
+            <Logo size="md" />
+          </Link>
           
           <p className="text-muted-foreground text-sm text-center">
             © {new Date().getFullYear()} MindSync. Building the future of software.

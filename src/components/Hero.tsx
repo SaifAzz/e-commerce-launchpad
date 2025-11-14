@@ -23,14 +23,14 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Building the Future of{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                E-Commerce
+                Software
               </span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-xl">
-              We're Saif and Mouazz, and we're revolutionizing online shopping with our 
-              cutting-edge platform. Just like Salla transformed KSA, we're bringing 
-              innovation to merchants everywhere.
+              We're Saif and Mouazz, a software company specializing in e-commerce 
+              platforms and all web development. We build cutting-edge solutions that 
+              transform businesses and deliver exceptional digital experiences.
             </p>
             
             <div className="flex flex-wrap gap-4">

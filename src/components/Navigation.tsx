@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,10 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-gradient-primary" />
-            <span className="text-xl font-bold">Saif & Mouazz</span>
-          </div>
+            <span className="text-xl font-bold">MindSync</span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -26,8 +27,17 @@ const Navigation = () => {
             <a href="#features" className="text-foreground hover:text-primary transition-colors">
               Features
             </a>
-            <Button size="sm" className="shadow-soft">
-              Contact Us
+            <Link to="/team" className="text-foreground hover:text-primary transition-colors">
+              Team
+            </Link>
+            <Button size="sm" className="shadow-soft" asChild>
+              <a 
+                href="https://wa.me/963997969712" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Contact Us
+              </a>
             </Button>
           </div>
 
@@ -64,8 +74,22 @@ const Navigation = () => {
             >
               Features
             </a>
-            <Button size="sm" className="w-full shadow-soft">
-              Contact Us
+            <Link
+              to="/team"
+              className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Team
+            </Link>
+            <Button size="sm" className="w-full shadow-soft" asChild>
+              <a 
+                href="https://wa.me/963997969712" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact Us
+              </a>
             </Button>
           </div>
         )}

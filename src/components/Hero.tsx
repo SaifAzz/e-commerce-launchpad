@@ -28,18 +28,39 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-xl">
-              We're Saif and Mouazz, a software company specializing in e-commerce 
+              We're MindSync, a software company specializing in e-commerce 
               platforms and all web development. We build cutting-edge solutions that 
               transform businesses and deliver exceptional digital experiences.
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="group shadow-medium hover:shadow-soft transition-all">
-                Explore Our Platform
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button 
+                size="lg" 
+                className="group shadow-medium hover:shadow-soft transition-all"
+                asChild
+              >
+                <a 
+                  href="https://wa.me/963997969712" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Explore Our Platform
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-2">
-                Get in Touch
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2"
+                asChild
+              >
+                <a 
+                  href="https://wa.me/963997969712" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Get in Touch
+                </a>
               </Button>
             </div>
           </div>

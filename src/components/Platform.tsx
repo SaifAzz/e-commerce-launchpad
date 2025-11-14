@@ -30,20 +30,12 @@ const Platform = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center space-y-6 mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-            <span className="text-sm font-medium text-accent">Our First Project</span>
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold">
             E-Commerce Platform{" "}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
               Made Simple
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Inspired by Salla's success in KSA, we're building a comprehensive 
-            e-commerce solution that empowers merchants to create, manage, and 
-            grow their online stores with ease.
-          </p>
         </div>
 
         {/* Features Grid */}
@@ -64,8 +56,14 @@ const Platform = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Button size="lg" variant="outline" className="border-2">
-            Learn More About Our Platform
+          <Button size="lg" variant="outline" className="border-2" asChild>
+            <a 
+              href="https://wa.me/963997969712" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Learn More About Our Platform
+            </a>
           </Button>
         </div>
       </div>
